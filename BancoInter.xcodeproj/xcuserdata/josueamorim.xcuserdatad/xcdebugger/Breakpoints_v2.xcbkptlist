@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "D7AA8B0B-BC0F-4DD9-B77C-25EE3AF42C07"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3F818027-F807-4251-8D80-A0DC7290F8E2"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BancoInter/Components/Cards.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
+            landmarkName = "previews"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "3F818027-F807-4251-8D80-A0DC7290F8E2 - 38582f20ed5623e2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BancoInter.Cards_Previews.init() -&gt; BancoInter.Cards_Previews"
+                  moduleName = "BancoInter"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/josueamorim/Documents/Dev/Xcode/Josue/BancoInter/BancoInter/Components/Cards.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "52"
+                  endingLineNumber = "52"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "3F818027-F807-4251-8D80-A0DC7290F8E2 - 7aebdac90edd9f5d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static BancoInter.Cards_Previews.previews.getter : some"
+                  moduleName = "BancoInter"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/josueamorim/Documents/Dev/Xcode/Josue/BancoInter/BancoInter/Components/Cards.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "53"
+                  endingLineNumber = "53"
+                  offsetFromSymbolStart = "84">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
