@@ -10,13 +10,13 @@ import SwiftUI
 struct CardGridView: View {
     
     @ObservedObject private var viewModel = ViewModel()
-    private var initialGridCard = 6
+    private var maxVisibleCards = 6
     
     var body: some View {
         VStack {
             LazyVGrid(columns: [GridItem(.adaptive(minimum: 100))]) {
-                ForEach(viewModel.isChevronTouched ? viewModel.getAllContentViewCards : Array(viewModel.getAllContentViewCards.prefix(initialGridCard)), id: \.id) { card in
-                    CardView(imageName: card.imageName, cardName: card.cardName)
+                ForEach(viewModel.isChevronTouched ? viewModel.getAllContentViewCards : Array(viewModel.getAllContentViewCards.prefix(maxVisibleCards)), id: \.id) { card in
+                    CardView(systemImageName: card.imageName, cardName: card.cardName)
                 }
             }
             .padding(.horizontal)
@@ -36,14 +36,11 @@ struct CardGridView: View {
                 }
             }
             .padding()
-            
-            
-            
         }
     }
 }
 
-struct CardGrid_Previews: PreviewProvider {
+struct CardGridView_Previews: PreviewProvider {
     static var previews: some View {
         CardGridView()
     }
