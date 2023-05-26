@@ -10,34 +10,34 @@ import SwiftUI
 struct LaunchScreenView: View {
     
     @State private var isActive: Bool = false
-    @State private var size = 0.9
-    @State private var oppacity = 0.5
-    
+    @State private var scale: CGFloat = 0.9
+    @State private var opacity = 0.5
     
     var body: some View {
-        
         if isActive {
-            //ContentView()
-            MyTest()
+            ContentView()
         } else {
-            Image("logo_inter")
-                .resizable()
-                .scaledToFill()
-                .frame( width: 100,height: 40)
-                .scaleEffect(size)
-                .opacity(oppacity)
-                .onAppear {
-                    withAnimation(.easeIn(duration: 1.2)) {
-                        self.size = 0.9
-                        self.oppacity = 1.0
+            VStack {
+                Image("logo_inter")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 100, height: 40)
+                    .scaleEffect(scale)
+                    .opacity(opacity)
+                    .onAppear {
+                        withAnimation(.easeIn(duration: 1.2).delay(0.5)) {
+                            scale = 1.0
+                            opacity = 1.0
+                        }
                     }
+            }
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .background(Color.white)
+            .onAppear {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+                    isActive = true
                 }
-                .onAppear {
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
-                        self.isActive = true
-                    }
-                    
-                }
+            }
         }
     }
 }
@@ -47,3 +47,4 @@ struct LaunchScreenView_Previews: PreviewProvider {
         LaunchScreenView()
     }
 }
+

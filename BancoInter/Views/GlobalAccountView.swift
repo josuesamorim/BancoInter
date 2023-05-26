@@ -13,17 +13,11 @@ struct GlobalAccountView: View {
     
     var body: some View {
         ScrollView {
-            //MARK: - Header
-            HeaderView()
-            
-            //MARK: - Balance and statement balance
-            //BalanceView()
-            
             //MARK: - Cards Grid
             LazyVGrid(columns: [GridItem(.adaptive(minimum: 100))]) {
                 ForEach(viewModel.getAllGlobalViewCards, id: \.id) {
                     card in
-                    CardView(imageName: card.imageName, cardName: card.cardName)
+                    CardView(systemImageName: card.imageName, cardName: card.cardName)
                 }
             }
             .padding(.horizontal)
