@@ -32,7 +32,7 @@ Gostaria de deixar claro que não possuo qualquer vínculo com o Banco Inter, ma
 
 Durante o processo de desenvolvimento, utilizei tecnologias como SwiftUI, que me permitiu criar interfaces flexíveis e responsivas. Além disso, apliquei os princípios de design e as melhores práticas de usabilidade para criar uma interface intuitiva e agradável de usar.
 
-
+Compatível com IOS 16.0 ou superior.
 
 ## 🚀 Recurso Utilizado
 
