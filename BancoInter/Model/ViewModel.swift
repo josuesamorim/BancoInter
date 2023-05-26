@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftUI
 
 
 //Eh responsavel por vincular os models as views
@@ -14,19 +15,26 @@ class ViewModel: ObservableObject {
     init(){
         createContentViewCards()
         createGlobalAccountCards()
+        createSettingList()
     }
     
     @Published var isTextOnScreen: Bool = false
     @Published var isChevronTouched: Bool = false
     @Published var isBRSelected: Bool = true
     @Published var isUSSelected: Bool = false
-    @Published var balance = "R$ 8,62"
+    @Published var brlBalance = "R$ 8,62"
+    @Published var usdBalance = "US$ 19,20"
     
     private var cards: [Cards] = []
     private var globalCards: [Cards] = []
+    private var settingList: [SettingList] = []
     
-    var getBalance: String {
-        return balance
+    var getBRLBalance: String {
+        return brlBalance
+    }
+    
+    var getUSDBalance: String {
+        return usdBalance
     }
     
     var getAllContentViewCards: [Cards] {
@@ -35,6 +43,10 @@ class ViewModel: ObservableObject {
     
     var getAllGlobalViewCards: [Cards] {
         return globalCards
+    }
+    
+    var getSettingList: [SettingList] {
+        return settingList
     }
     
     struct Cards: Identifiable, Hashable {
@@ -58,6 +70,17 @@ class ViewModel: ObservableObject {
         for index in 0..<content.count{
             globalCards.append(Cards(id: index, imageName: content[index].image, cardName: content[index].cardName))
         }
+    }
+    
+    func createSettingList() {
+        let list = SettingsList.getSettings
+       
+        
+        for index in 0..<list.count {
+            settingList.append(SettingList(id: index, imageName: list[index].settingImage, cardName: list[index].settingName, color: list[index].color))
+        }
+        
+       
     }
     
 }
