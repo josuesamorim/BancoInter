@@ -11,23 +11,19 @@ struct SearchView: View {
     
     @State private var searchText: String = ""
     @Environment(\.dismiss) var dismiss
-    private let shape = Design().shape
+    private let designShape = Design().shape
     
     var body: some View {
         
         ScrollView {
             
-            //MARK: - Header
+            // MARK: - Header
             HStack {
-                
                 Spacer()
-                
                 Text("Busca")
                     .bold()
                     .foregroundColor(.black)
-                
                 Spacer()
-                
                 Button {
                     dismiss()
                 } label: {
@@ -37,13 +33,13 @@ struct SearchView: View {
                 }
             }
             
-            //MARK: - Search Box
+            // MARK: - Search Box
             HStack {
                 Image(systemName: "magnifyingglass")
                     .foregroundColor(.orange)
                     .padding(.trailing)
                 
-                TextField("Pesquisar no inter", text: $searchText)
+                TextField("Pesquisar no Inter", text: $searchText)
                     .font(.body.bold())
                     .foregroundColor(Color("inter_bold"))
             }
@@ -53,14 +49,11 @@ struct SearchView: View {
         }
         .padding()
         
-        
-        //MARK: - Divider
+        // MARK: - Divider
         Divider()
             .padding(.top)
     }
-    
 }
-
 
 struct SearchView_Previews: PreviewProvider {
     static var previews: some View {
