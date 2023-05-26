@@ -21,11 +21,11 @@ struct HorizontalMarketingCardView: View {
     var body: some View {
         VStack {
             ZStack {
-                    RoundedRectangle(cornerRadius: DrawingConstants.cornerRadius)
-                    shape.fill().foregroundColor(.white)
-                    shape.strokeBorder(lineWidth: DrawingConstants.lineWidth)
-                    shape.stroke(Color("inter_gray"))
-                    
+                RoundedRectangle(cornerRadius: DrawingConstants.cornerRadius)
+                shape.fill().foregroundColor(.white)
+                shape.strokeBorder(lineWidth: DrawingConstants.lineWidth)
+                shape.stroke(Color("inter_gray"))
+                
                 VStack(alignment: .center){
                     Image(imageName)
                         .resizable()
