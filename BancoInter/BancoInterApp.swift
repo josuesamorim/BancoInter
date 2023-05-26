@@ -12,7 +12,6 @@ struct BancoInterApp: App {
     var body: some Scene {
         WindowGroup {
             LaunchScreenView()
-            //ContentView(viewModel: ViewModel())
         }
     }
 }
