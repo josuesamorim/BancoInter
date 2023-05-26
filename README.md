@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img alt="Banco Inter" title="Banco Inter" src="https://github.com/josuesamorim/BancoInter/assets/79451027/1e87a5ef-289c-4a52-89c0-1f9947cf0316" height="80"
+  <img alt="Banco Inter" title="Banco Inter" src="https://github.com/josuesamorim/BancoInter/assets/79451027/9d8776d6-ae03-46e1-97d2-bd4370b0a5f2" height="80"
        />
 </h1>
 
@@ -12,7 +12,7 @@
 
 <br>
 
-<p align="center">  <img alt="Banco Inter" src="https://github.com/josuesamorim/BancoInter/assets/79451027/067c04ec-5c82-4880-91f4-72666adb5153" width="70%">
+<p align="center">  <img alt="Banco Inter" src="https://github.com/josuesamorim/BancoInter/assets/79451027/b86a708c-786b-4d95-8a49-efb7d3798a76" width="70%">
 </p>
 
 ## ✨ Principais Destaques
