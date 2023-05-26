@@ -10,16 +10,18 @@ import SwiftUI
 struct BalanceView: View {
     
     @ObservedObject private var viewModel = ViewModel()
+    @Binding var isBrazilSelected: Bool
+    @Binding var isUSSelected: Bool
     
     var body: some View {
         HStack {
             if !viewModel.isTextOnScreen {
-                Text(viewModel.getBalance)
+                Text(isBrazilSelected ? viewModel.getBRLBalance : viewModel.getUSDBalance)
                     .bold()
                     .font(.title)
                     .padding(.leading)
             } else {
-                Text("--")
+                Text("---")
                     .bold()
                     .font(.title)
                     .padding(.leading)
@@ -42,12 +44,11 @@ struct BalanceView: View {
             .padding(.leading)
             .padding(.vertical, 1)
             .foregroundColor(.orange)
-        
     }
 }
 
-struct Balance_Previews: PreviewProvider {
+struct BalanceView_Previews: PreviewProvider {
     static var previews: some View {
-        BalanceView()
+        BalanceView(isBrazilSelected: .constant(false), isUSSelected: .constant(true))
     }
 }
