@@ -8,35 +8,36 @@
 import SwiftUI
 
 struct ContentView: View {
-
+    
     @ObservedObject var viewModel = ViewModel()
+    @State private var isShowingGlobalAccountView = false
+    @State private var isBrazilSelected: Bool = true
+    @State private var isUSSelected: Bool = false
     
     var body: some View {
-        
-       
-            ScrollView {
-                
-                //MARK: - Header
-                HeaderView()
-                
-                //MARK: - Balance and statement balance
-                //BalanceView()
-                
-                //MARK: - Cards Grid
-                CardGridView()
-                
-                //MARK: - Horizontal Marketing Cards
-                HorizontalMarketingCardView(imageName: "dia_maes", text: "Inter Shop")
-                HorizontalMarketingCardView(imageName: "global_account", text: "Global Account")
-                
-                //MARK: - Two Cards in a Hstack
-                HStack(alignment: .center, spacing: 10) {
-                    SplitHorizontalMarketCardView(imageName: "fgts", text: "Antecipação de FGTS")
-                    SplitHorizontalMarketCardView(imageName: "nutri", text: "Telemedicina")
-                }
+        ScrollView {
+            headerView
+            balanceView
+            accountView
+        }
+    }
+    
+    private var headerView: some View {
+        HeaderView(isBRSelected: $isBrazilSelected, isUSSelected: $isUSSelected)
+    }
+    
+    private var balanceView: some View {
+        BalanceView(isBrazilSelected: $isBrazilSelected, isUSSelected: $isUSSelected)
+    }
+    
+    private var accountView: some View {
+        Group {
+            if isBrazilSelected {
+                BRAccountView()
+            } else if isUSSelected {
+                GlobalAccountView()
             }
-            .background(Color.interBackground)
-        
+        }
     }
 }
 
