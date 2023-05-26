@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		991541AA2A00076F00A710D9 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 991541A92A00076F00A710D9 /* SearchView.swift */; };
-		99358E182A0E75FC007D7381 /* MyTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99358E172A0E75FC007D7381 /* MyTest.swift */; };
+		99358E1E2A195E62007D7381 /* BRAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99358E1D2A195E62007D7381 /* BRAccountView.swift */; };
 		9961D79A2A0BDE3D001E9982 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9961D7992A0BDE3D001E9982 /* Extension.swift */; };
 		9961D79C2A0D50DB001E9982 /* LaunchScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9961D79B2A0D50DB001E9982 /* LaunchScreenView.swift */; };
 		99757D392A03081800AC92DF /* CardContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99757D382A03081800AC92DF /* CardContentViewModel.swift */; };
@@ -17,6 +17,8 @@
 		99757D422A0981A100AC92DF /* Design.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99757D412A0981A100AC92DF /* Design.swift */; };
 		99B22F892A0E67530084B165 /* GlobalAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B22F882A0E67530084B165 /* GlobalAccountView.swift */; };
 		99B22F8B2A0E68470084B165 /* CardGlobalAccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B22F8A2A0E68470084B165 /* CardGlobalAccountViewModel.swift */; };
+		99C676F52A1CE327005A9378 /* SettingsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C676F42A1CE327005A9378 /* SettingsList.swift */; };
+		99C676F72A1CE6A7005A9378 /* SettingsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C676F62A1CE6A7005A9378 /* SettingsListView.swift */; };
 		99FBEAE229FDA50E00A492DC /* BancoInterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99FBEAE129FDA50E00A492DC /* BancoInterApp.swift */; };
 		99FBEAE429FDA50E00A492DC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99FBEAE329FDA50E00A492DC /* ContentView.swift */; };
 		99FBEAE629FDA50F00A492DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99FBEAE529FDA50F00A492DC /* Assets.xcassets */; };
@@ -30,7 +32,7 @@
 
 /* Begin PBXFileReference section */
 		991541A92A00076F00A710D9 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
-		99358E172A0E75FC007D7381 /* MyTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTest.swift; sourceTree = "<group>"; };
+		99358E1D2A195E62007D7381 /* BRAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BRAccountView.swift; sourceTree = "<group>"; };
 		9961D7992A0BDE3D001E9982 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		9961D79B2A0D50DB001E9982 /* LaunchScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenView.swift; sourceTree = "<group>"; };
 		9961D79D2A0D5215001E9982 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -40,6 +42,8 @@
 		99757D412A0981A100AC92DF /* Design.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Design.swift; sourceTree = "<group>"; };
 		99B22F882A0E67530084B165 /* GlobalAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalAccountView.swift; sourceTree = "<group>"; };
 		99B22F8A2A0E68470084B165 /* CardGlobalAccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardGlobalAccountViewModel.swift; sourceTree = "<group>"; };
+		99C676F42A1CE327005A9378 /* SettingsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsList.swift; sourceTree = "<group>"; };
+		99C676F62A1CE6A7005A9378 /* SettingsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsListView.swift; sourceTree = "<group>"; };
 		99FBEADE29FDA50E00A492DC /* BancoInter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BancoInter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99FBEAE129FDA50E00A492DC /* BancoInterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BancoInterApp.swift; sourceTree = "<group>"; };
 		99FBEAE329FDA50E00A492DC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -131,7 +135,8 @@
 				99757D3A2A096B1C00AC92DF /* BalanceView.swift */,
 				9961D79B2A0D50DB001E9982 /* LaunchScreenView.swift */,
 				99B22F882A0E67530084B165 /* GlobalAccountView.swift */,
-				99358E172A0E75FC007D7381 /* MyTest.swift */,
+				99358E1D2A195E62007D7381 /* BRAccountView.swift */,
+				99C676F62A1CE6A7005A9378 /* SettingsListView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -142,6 +147,7 @@
 				99FBEAF929FECA8800A492DC /* ViewModel.swift */,
 				99757D382A03081800AC92DF /* CardContentViewModel.swift */,
 				99B22F8A2A0E68470084B165 /* CardGlobalAccountViewModel.swift */,
+				99C676F42A1CE327005A9378 /* SettingsList.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -218,8 +224,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				99358E182A0E75FC007D7381 /* MyTest.swift in Sources */,
 				99FBEAE429FDA50E00A492DC /* ContentView.swift in Sources */,
+				99C676F72A1CE6A7005A9378 /* SettingsListView.swift in Sources */,
 				991541AA2A00076F00A710D9 /* SearchView.swift in Sources */,
 				99FBEAF329FDA56A00A492DC /* HeaderView.swift in Sources */,
 				99FBEAE229FDA50E00A492DC /* BancoInterApp.swift in Sources */,
@@ -229,9 +235,11 @@
 				99757D3B2A096B1C00AC92DF /* BalanceView.swift in Sources */,
 				99FBEAFA29FECA8800A492DC /* ViewModel.swift in Sources */,
 				9961D79C2A0D50DB001E9982 /* LaunchScreenView.swift in Sources */,
+				99358E1E2A195E62007D7381 /* BRAccountView.swift in Sources */,
 				99B22F892A0E67530084B165 /* GlobalAccountView.swift in Sources */,
 				9961D79A2A0BDE3D001E9982 /* Extension.swift in Sources */,
 				99757D422A0981A100AC92DF /* Design.swift in Sources */,
+				99C676F52A1CE327005A9378 /* SettingsList.swift in Sources */,
 				99FBEAFE29FF40E400A492DC /* SplitHorizontalMarketCardView.swift in Sources */,
 				99B22F8B2A0E68470084B165 /* CardGlobalAccountViewModel.swift in Sources */,
 				99FBEAF529FDC22C00A492DC /* CardView.swift in Sources */,
@@ -291,7 +299,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -345,7 +353,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
