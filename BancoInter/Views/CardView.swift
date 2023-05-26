@@ -10,37 +10,34 @@ import SwiftUI
 
 struct CardView: View {
     
-    var imageName: String
+    var systemImageName: String
     var cardName: String
     private let shape = Design().shape
     
     var body: some View {
-        
-            ZStack {
-                    shape.fill().foregroundColor(.white)
-                    shape.strokeBorder(lineWidth: DrawingConstants.lineWidth)
-                    shape.stroke(Color("inter_gray"))
-                    
-               
-                    VStack {
-                        Image(systemName: imageName)
-                            .font(.system(size: DrawingConstants.fontScale))
-                            .foregroundColor(.orange)
-                            .padding(.bottom)
-                        Text(cardName)
-                            .font(.caption)
-                            .bold()
-                            
-                    }
-            }
-            .frame(width: 115, height: 110, alignment: .center)
+        ZStack {
+            shape.fill()
+                .foregroundColor(.white)
+            shape.strokeBorder(lineWidth: DrawingConstants.lineWidth)
+            shape.stroke(Color("inter_gray"))
             
-            //.padding()
+            VStack {
+                Image(systemName: systemImageName)
+                    .font(.system(size: DrawingConstants.fontScale))
+                    .foregroundColor(.orange)
+                    .padding(.bottom)
+                
+                Text(cardName)
+                    .font(.caption)
+                    .bold()
+            }
+        }
+        .frame(width: 115, height: 110, alignment: .center)
     }
 }
 
-struct Cards_Previews: PreviewProvider {
+struct CardView_Previews: PreviewProvider {
     static var previews: some View {
-        CardView(imageName: "person", cardName: "Abrir Conta Inter Empresas")
+        CardView(systemImageName: "person", cardName: "Abrir Conta Inter Empresas")
     }
 }
