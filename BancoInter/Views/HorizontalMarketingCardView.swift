@@ -38,6 +38,7 @@ struct HorizontalMarketingCardView: View {
                         .padding(.top)
                         .padding(.bottom)
                         .font(.body.bold())
+                        .foregroundColor(.black)
                 }
             }
             .padding(25)

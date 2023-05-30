@@ -36,6 +36,7 @@ struct SplitHorizontalMarketCardView: View {
                         .padding(.bottom)
                         .font(.body.bold())
                         .font(.caption)
+                        .foregroundColor(.black)
                 }
             }
             .frame(width: 170, height: 193, alignment: .center)

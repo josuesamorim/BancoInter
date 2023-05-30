@@ -30,6 +30,7 @@ struct CardView: View {
                 Text(cardName)
                     .font(.caption)
                     .bold()
+                    .foregroundColor(.black)
             }
         }
         .frame(width: 115, height: 110, alignment: .center)

@@ -19,11 +19,13 @@ struct BalanceView: View {
                 Text(isBrazilSelected ? viewModel.getBRLBalance : viewModel.getUSDBalance)
                     .bold()
                     .font(.title)
+                    .foregroundColor(.black)
                     .padding(.leading)
             } else {
                 Text("---")
                     .bold()
                     .font(.title)
+                    .foregroundColor(.black)
                     .padding(.leading)
             }
             

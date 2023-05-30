@@ -20,6 +20,7 @@ struct ContentView: View {
             balanceView
             accountView
         }
+        .background(Color.interBackground)
     }
     
     private var headerView: some View {

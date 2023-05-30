@@ -33,6 +33,7 @@ struct SearchView: View {
                 }
             }
             
+            
             // MARK: - Search Box
             HStack {
                 Image(systemName: "magnifyingglass")
@@ -45,14 +46,16 @@ struct SearchView: View {
             }
             .frame(height: 60, alignment: .center)
             .padding(.horizontal)
-            .background(Color.interBackground)
+            .background(Color.flagSelected)
         }
         .padding()
+        .background(Color.interBackground)
         
         // MARK: - Divider
         Divider()
             .padding(.top)
     }
+    
 }
 
 struct SearchView_Previews: PreviewProvider {
